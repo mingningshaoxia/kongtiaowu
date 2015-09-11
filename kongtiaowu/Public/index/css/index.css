@@ -1,0 +1,29 @@
+/*信息分类*/
+.main_cnt{margin-top:10px;}
+.main_left{width:800px;min-height:500px;height:auto;float:left;}
+.main_rit{width:270px;height:500px;float:right;border:1px solid #EDEDED;border-radius:5px;}
+.info_list{width:100%;min-height:80px;height:auto;border-radius:20px;background:#FAFAFA;margin-bottom:10px;}
+.info_list table td{height:40px;line-height:40px;text-indent:5px;}
+.info_div{width:400px;min-height:30px;height:auto;float:right;}
+/*信息详情展示*/
+.detail{width:100%;height:auto;position:relative;}
+.detail_ad{width:470px;height:220px;position:absolute;right:0px;top:0;z-index:10;background:#ededed;}
+.detail_ad img{width:100%;height:100%;}
+.bigtab{width:100%;}
+.bigtab td{height:40px;}
+.bigtab table{width:50%;}
+.handle{width:100%;min-height:100px;height:auto;background:#FAFAFA;margin-bottom:10px;}
+.handle_titl{width:100%;height:25px;line-height:25px;}
+.handle_cnt{width:95%;min-height:45px;height:auto;margin:0 auto;}
+.handle_btm{width:100%;height:30px;line-height:30px;text-align:center;}
+.collect{color:#F00;font-size:16px;font-weight:bold;}
+
+
+
+.tab{margin:auto;}
+.tab td{height:45px;}
+
+.btm_bx{width:790px;height:510px;margin:8px auto;}
+.btm_lef{width:75px;height:100%;float:left;text-align:right;}
+.btm_rit{width:710px;height:100%;float:right;}
+.btm_rit textarea{width:700px;height:500px;max-width:700px;max-height:500px;}

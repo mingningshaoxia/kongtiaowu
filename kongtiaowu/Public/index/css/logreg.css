@@ -1,0 +1,15 @@
+.navbg{background:#EDEDED;}
+.info_tab td{height:40px;line-height:40px;}
+.submit{width:120px;height:35px;background:#EB3939;border:1px solid #EB3939;font-size:20px;font-weight:bold;border-radius:3px;
+color:#FFF;}
+.infobx{width:200px;height:30px;border:1px solid #CCC;}
+
+.shortbx{width:80px;height:30px;border:1px solid #CCC;}
+.send_txt{width:107px;height:33px;background:none;border:1px solid #CCC;color:#EB3939;margin-left:5px;font-weight:bold;}
+
+.type_choose{width:100%;height:30px;line-height:30px;text-align:center;margin:0 auto;}
+.cnt_lef{width:450px;height:400px;float:left;margin-top:20px;}
+.cnt_rit{width:640px;height:400px;float:right;border-left:1px dotted #CCC;margin-top:20px;}
+.cnt_rit img{width:100%;height:100%;}
+
+.cnt_bx{width:80%;height:auto;margin:35px auto;}

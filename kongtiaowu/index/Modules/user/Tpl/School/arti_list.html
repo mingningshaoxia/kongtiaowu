@@ -1,0 +1,34 @@
+<link href="__PUBLIC__/index/css/school.css" rel="stylesheet" type="text/css"/>
+<div class="main_cnt">
+   <div class="main_left">
+    
+      <div class="lef_bx">
+      
+        <foreach name="list" item="v"> 
+         <div class="arti_bx">
+           <a href="{:U(GROUP_NAME.'/School/arti_detail',array('id'=>$v['id']))}" target="_blank">
+            <div class="arti_bx_lef" name="titl">
+              {$v.titl}
+            </div>
+           </a> 
+            <div class="arti_bx_rit" name="time">
+              {$v.time|date="Y-m-d",###}
+            </div>
+           
+         </div>
+        </foreach>
+		<?php ?>
+			<input type="hidden" name="getvalue" value=""/>
+		<?php ?>
+        
+      </div> 
+       
+      <div class="set_page">
+        在此分页
+      </div>
+       
+   </div>
+   <div class="main_rit">
+       广告区域
+   </div>
+</div>

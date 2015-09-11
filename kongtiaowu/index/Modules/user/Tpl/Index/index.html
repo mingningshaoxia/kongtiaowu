@@ -1,0 +1,229 @@
+<link href="__PUBLIC__/index/css/homepage.css" type="text/css" rel="stylesheet" />
+      <div class="main_cnt">
+          <div class="cen_cnt ads">
+          
+          </div>
+          <div class="first" style="margin-top:10px;">
+             
+             <div class="lef">
+                <div class="litl_bx">
+                   <div class="all_titl">
+                       <div class="titl_lef">
+                         新手入门
+                       </div>
+                       <div class="titl_rit">
+                         <a href="{:U(GROUP_NAME.'/School/arti_list')}" target="_blank">
+                           更多》
+                         </a>
+                       </div>
+                   </div>
+                   <div class="litl_cnt">
+                     <table class="tab_list">
+                       <volist name="list" id="v" offset="0" length='7'>
+                        <tr>
+                          <td>
+                             <a href="{:U(GROUP_NAME.'/School/arti_detail',array('id'=>$v['id']))}" target="_blank">
+                               {$v.titl}
+                             </a>
+                          </td>
+                        </tr>
+                       </volist>
+                     </table>
+                   </div>
+                </div>
+                <div class="litl_bx">
+                   <div class="all_titl">
+                     
+                     <div class="titl_lef">
+                     最近手机网赚项目
+                     </div>
+                     <div class="titl_rit">
+                       <a href="{:U(GROUP_NAME.'/Index/info_detail',array('id'=>$cnt['id']))}" target="_blank">
+                         更多》
+                       </a>
+                     </div>
+                   </div>
+                   <div class="litl_cnt">
+                     <table class="tab_list">
+                      <volist name="pro" id="vo" offset="0" length="7">
+                       <tr>
+                         <td>
+                            <a href="{:U(GROUP_NAME.'/Index/info_detail',array('id'=>$vo['id']))}" target="_blank">
+                              {$vo.titl}
+                            </a>
+                         </td>
+                       </tr>
+                      </volist>
+                     </table>
+                   </div>
+                </div>
+                <div class="litl_bx">
+                   <div class="all_titl">
+                     <div class="titl_lef">
+                     最近购物返利
+                     </div>
+                     <div class="titl_rit">
+                       <a href="{:U(GROUP_NAME.'/Index/info_detail',array('id'=>$cnt['id']))}" target="_blank">
+                        更多》
+                        </a>
+                     </div>
+                   </div>
+                   <div class="litl_cnt">
+                      <table class="tab_list">
+                      <volist name="pro" id="pur" offset="0" length="7">
+                       <tr>
+                          <td>
+                             <a href="{:U(GROUP_NAME.'/Index/info_detail',array('id'=>$vo['id']))}" target="_blank">
+                               {$pur.titl}
+                             </a>
+                          </td>
+                       </tr>
+                      </volist>
+                     </table>
+                   </div>
+                </div>
+                
+                
+             </div>
+             <div class="cen">
+                
+                <div class="midl_bx">
+                   <div class="all_titl">
+                     <div class="titl_lef">
+                     网赚项目最新发布
+                     </div>
+                     <div class="titl_rit">
+                       <a href="{:U(GROUP_NAME.'/Index/info_detail',array('id'=>$cnt['id']))}" target="_blank">
+                         更多》
+                       </a>
+                     </div>
+                   </div>
+                   <div class="midl_cnt">
+                      <table class="midl_tab">
+                       <volist name="pro" id="cnt" offset="0" length="10">
+                       <tr>
+                         <td>
+                           <a href="{:U(GROUP_NAME.'/Index/info_detail',array('id'=>$cnt['id']))}" target="_blank">
+                             {$cnt.titl}
+                           </a>
+                         </td>
+                         <td>
+                            发布时间:{$cnt.time|date="Y-m-d",###}
+                         </td>
+                       </tr>
+                       </volist>
+                      </table>
+                   </div>
+                </div>
+                <div class="midl_bx">
+                   <div class="all_titl">
+                       <div class="titl_lef">
+                       网赚精选
+                       </div>
+                       <div class="titl_rit">
+                         <a href="{:U(GROUP_NAME.'/Index/info_detail')}"  target="_blank">
+                           更多》
+                         </a>
+                       </div>
+                   </div>
+                   <div class="midl_cnt">
+                     <volist name="pro" id="main" offset="0" length="10">
+                         <div class="choose">
+                           <a href="{:U(GROUP_NAME.'/Index/info_detail',array('id'=>$main['id']))}" target="_blank">
+                            <table>
+                              <tr>
+                                <td>标题:</td>
+                                <td colspan="3">{$main.titl}</td>
+                              </tr>
+                              <tr>
+                                <td>项目名称：</td>
+                                <td>{$main.name}</td>
+                                <td align="right">有效期至：</td>
+                                <td>{$main.deadline}</td>
+                              </tr>
+                            </table>
+                            </a>
+                         </div>
+                     </volist>
+                   
+                   </div>
+                </div>
+                
+             </div>
+             <div class="rit">
+                
+                <div class="litl_bx rit_one">
+                    <table>
+                      <tr>
+                          <td>
+                              <input type="button" onclick="window.location.href='{:U('/Admin/regedit')}'" value="我要注册"/>
+                          </td>
+                          <td>
+                              <input type="button" value="发帖须知"/>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <input type="button" id="publish" onclick="window.location.href='{:U('/Index/info_pub')}'" value="发布项目"/>
+                          </td>
+                          <td>
+                              <input type="button" onclick="window.location.href='{:U('/School/arti_list')}'" value="网赚学堂"/>
+                          </td>
+                      </tr>
+                    </table>
+                </div>
+                
+                <div class="litl_bx">
+                   <div class="all_titl">
+                     <div class="titl_lef">
+                     网赚经验分享
+                     </div>
+                     <div class="titl_rit">
+                       <a href="{:U(GROUP_NAME.'/School/arti_detail')}" target="_blank">
+                        更多》
+                       </a>
+                     </div>
+                   </div>
+                   <div class="">
+                       <table class="tab_list">
+                          <volist name="list" id="v" offset="0" length='7'>
+                            <tr>
+                              <td>
+                                 <a href="{:U(GROUP_NAME.'/School/arti_detail',array('id'=>$v['id']))}" target="_blank">{$v.titl}</a>
+                              </td>
+                            </tr>
+                          </volist>
+                      </table>
+                   </div>
+                </div>
+                
+                <div class="litl_bx rit_two">
+                   <div class="all_titl">
+                       <div class="titl_lef">
+                       网赚中的骗局
+                       </div>
+                       <div class="titl_rit">
+                         <a href="{:U(GROUP_NAME.'/School/arti_detail')}" target="_blank">
+                         更多》
+                         </a>
+                       </div>
+                   </div>
+                   <div class="">
+                       <table class="tab_list">
+                         <volist name="list" id="v" offset="0" length='7'>
+                            <tr>
+                              <td>
+                                 <a href="{:U(GROUP_NAME.'/School/arti_detail',array('id'=>$v['id']))}" target="_blank">{$v.titl}</a>
+                              </td>
+                            </tr>
+                        </volist>
+                       </table>
+                   </div>
+                </div>
+                
+                
+             </div>
+             
+          </div>
+          
+      </div>

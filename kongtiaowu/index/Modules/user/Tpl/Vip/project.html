@@ -1,0 +1,30 @@
+<link href="__PUBLIC__/index/css/vip.css" rel="stylesheet" type="text/css"/>
+<div class="main_cnt">
+  <!--项目列表-->
+ <volist name="getpro" id="proj" offset="0" length="20">    
+  <div class="list_box">
+   
+     <div class="">
+        
+        <table>
+          <tr>
+            <td>标题：</td><td align="left">{$proj.titl}</td>
+            <td>名称：</td><td align="left">{$proj.name}</td>
+            <td>有效期：</td><td align="left">{$proj.deadline}</td>
+          </tr>
+          <tr>
+            <td>链接：</td><td align="left">{$proj.link}</td>
+            <td>特点：</td><td align="left">{$proj.character}</td>
+            <td>发布时间：</td><td align="left">{$proj.time}</td>
+          </tr> 
+        </table>
+         
+     </div>
+  
+     
+  </div>
+ </volist>
+</div>
+
+</body>
+</html>

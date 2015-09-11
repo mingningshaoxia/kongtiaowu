@@ -1,0 +1,26 @@
+<link href="__PUBLIC__/index/css/index.css" rel="stylesheet" type="text/css"/>
+<div class="main_cnt">
+   <div class="main_left">
+   
+     <volist name="list" id="v" offset="0" length='10'>
+      <div class="info_list">
+        <a href="{:U(GROUP_NAME.'/Index/info_detail',array('id'=>$v['id']))}" target="_blank">
+         <table>
+            <tr>
+               <td>标题:<div class="info_div">{$v.titl}</div></td>
+               <td>项目名称：{$v.name}</td>
+            </tr>
+            <tr>
+                <td>特点:<div class="info_div">{$v.character}</div></td>
+                <td>有效期至：{$v.deadline}</td>
+            </tr>
+         </table>
+        </a>
+      </div>
+     </volist>      
+      
+   </div>
+   <div class="main_rit">
+       广告区域
+   </div>
+</div>

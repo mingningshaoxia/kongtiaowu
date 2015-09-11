@@ -1,0 +1,21 @@
+.navbg{background:#3C6;}
+.nav a.active{background:#063;}
+.main_cnt{margin-top:10px;border:1px solid #ededed;}
+
+/*文章发布*/
+.arti_tab td{height:45px;}
+.arti{width:800px;margin:0 auto;}
+.arti_btm{width:100%;height:500px;margin-top:10px;}
+.arti_lef{width:70px;height:200px;float:left;}
+.arti_rit{width:728px;height:500px;float:right;}
+.arti_rit textarea{width:715px;height:500px;}
+
+.submt{border:1px solid #3C6;background:#3C6;}
+/*.lef_nav{width:150px;height:500px;float:left;border:1px solid #EDEDED;border-radius:5px;text-align:center;background:#FAFAFA;}
+.lef_nav ul{width:120px;margin:20px auto;padding:0;list-style:none;}
+.lef_nav ul li{height:35px;line-height:35px;margin-top:5px;background:#3C6;color:#FFF;font-weight:bold;font-size:18px;border-radius:3px;}
+.rit_cnt{width:935px;min-height:500px;height:auto;border:1px solid #EDEDED;float:right;}*/
+
+/*我的项目*/
+.list_box{width:100%;height:60px;border-bottom:1px dotted #CCC;}
+.list_box table{width:100%;text-align:right;}

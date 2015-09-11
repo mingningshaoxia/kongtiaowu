@@ -1,0 +1,28 @@
+<link href="__PUBLIC__/index/css/school.css" rel="stylesheet" type="text/css"/>
+<div class="main_cnt">
+   
+   <div class="main_left">
+     <table>
+       <tr>
+           <td colspan="6" align="center" style="font-weight:bold">{$row.titl}</td>
+       </tr>
+       <tr>
+           <td align="right">标签:</td>
+           <td>{$row.label}</td>
+           <td align="right">会员:</td>
+           <td>李四</td>
+           <td align="right">发布时间:</td>
+           <td>{$row.time|date="Y-m-d",###}</td>
+       </tr>
+       <tr>
+          <td colspan="6">
+           {$row.content}
+          </td>
+       </tr>
+     </table>
+   </div>
+   <div class="main_rit">
+     广告区域
+   </div>
+   
+</div>
